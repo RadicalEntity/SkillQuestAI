@@ -1,23 +1,18 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Chat from './chat';
+import logo from './questAI-logo.png';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <img alt='QuestAI Logo' src={logo}></img>
+        <h1>&#128075; Welcome to your AI Tutor!</h1>
       </header>
+      <main>
+        <Chat />
+      </main>
     </div>
   );
 }
